@@ -166,7 +166,7 @@ Disk space = ~5 GB free for the three raw datasets
 # Step-by-step setup
 
 ```
-git clone <https://github.com/Varshithapagadala/Master-thesis>
+git clone <https://github.com/devivarshithapagadala-lab/varshitha_thesis.git>
 cd cross-dataset-thesis
 
 python3 -m venv venv
