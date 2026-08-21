@@ -1,0 +1,2 @@
+Configuration,Calibration_F1,HeldOut_Precision,HeldOut_Recall,HeldOut_F1
+Isolation_Forest(contamination=0.3),0.4065040650406504,0.28814528814528817,0.806,0.4245233329821974

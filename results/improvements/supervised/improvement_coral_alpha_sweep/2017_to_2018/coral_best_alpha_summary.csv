@@ -1,0 +1,5 @@
+Model,Alpha,Precision,Recall,F1
+Gradient_Boosting,0.5,0.000660414740457007,0.001,0.0007954816641476414
+Logistic_Regression,0.0,0.0,0.0,0.0
+Neural_Network,0.0,0.0,0.0,0.0
+Random_Forest,0.0,0.0007535795026375283,0.0002,0.000316105579263474

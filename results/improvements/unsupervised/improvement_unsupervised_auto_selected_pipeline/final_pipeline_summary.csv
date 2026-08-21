@@ -1,0 +1,4 @@
+Direction,Configuration,Calibration_F1,HeldOut_Precision,HeldOut_Recall,HeldOut_F1
+2017_to_2018,Isolation_Forest(contamination=0.3),0.4065040650406504,0.28814528814528817,0.806,0.4245233329821974
+unsw_to_2017,Autoencoder(threshold=mean_3std),0.7711864406779662,0.8137721957557384,0.7516,0.7814514452069037
+unsw_to_2018,Local_Outlier_Factor(contamination=0.01),0.3553530751708428,0.2356897091022834,0.6028,0.3388801439172476

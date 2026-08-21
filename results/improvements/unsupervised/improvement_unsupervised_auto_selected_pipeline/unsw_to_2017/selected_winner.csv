@@ -1,0 +1,2 @@
+Configuration,Calibration_F1,HeldOut_Precision,HeldOut_Recall,HeldOut_F1
+Autoencoder(threshold=mean_3std),0.7711864406779662,0.8137721957557384,0.7516,0.7814514452069037

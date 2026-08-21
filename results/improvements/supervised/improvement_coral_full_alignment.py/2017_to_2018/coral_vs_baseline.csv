@@ -1,0 +1,5 @@
+Model,Baseline_Precision,Baseline_Recall,Baseline_F1,Coral_Precision,Coral_Recall,Coral_F1,F1_Improvement
+Random_Forest,0.0007535795026375283,0.0002,0.000316105579263474,0.0,0.0,0.0,-0.000316105579263474
+Gradient_Boosting,0.0012531328320802004,0.0002,0.00034494653328734045,0.0,0.0,0.0,-0.00034494653328734045
+Logistic_Regression,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Neural_Network,0.0,0.0,0.0,0.0,0.0,0.0,0.0
