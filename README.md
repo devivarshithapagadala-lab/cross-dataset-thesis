@@ -1,4 +1,4 @@
-**Direction-Dependent Generalization in Cross-Dataset Network Intrusion Detection: A Comparative Study of In-Domain and Cross-Dataset Performance for Supervised and Unsupervised Machine Learning Models**
+# Direction-Dependent Generalization in Cross-Dataset Network Intrusion Detection: A Comparative Study of In-Domain and Cross-Dataset Performance for Supervised and Unsupervised Machine Learning Models
 
 This is Master's project for dissertation which involves the investigation of whether 
 supervised & unsupervised machine learning models for network intrusion detection
