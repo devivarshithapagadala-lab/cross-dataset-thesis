@@ -63,7 +63,7 @@ def fine_grained_label(direction_name, x_train_source, y_train_source, x_target_
     return results_df
 
 def main():
-    base_out = "results/studies/experiments/improvement_fine_grained_label_budget_study"
+    base_out = "results/studies/improvements/improvement_fine_grained_label_budget_study"
     all_results = []
     train_of_2017 = load_csv_after_removing_duplicates("data/CICIDS2017/Wednesday-workingHours.pcap_ISCX.csv")
     train_of_2017 = train_of_2017.sample(n=50000, random_state=42).reset_index(drop=True)
