@@ -1,0 +1,6 @@
+Feature_Group_Removed,Precision,Recall,F1
+BASELINE,0.0393,0.0374,0.0383
+Traffic_Volume,0.0,0.0,0.0
+Packet_Length,0.0775,0.0736,0.0755
+Timing,0.0815,0.0374,0.0513
+Flags,0.0409,0.0374,0.0391

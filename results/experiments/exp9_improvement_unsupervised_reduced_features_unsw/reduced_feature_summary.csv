@@ -1,0 +1,3 @@
+Direction of testing,Configuration,Calibration_F1,HeldOut_Precision,HeldOut_Recall,HeldOut_F1
+unsw_to_2017,Autoencoder(t=percentile95),0.6641509433962264,0.6048472075869337,0.6888,0.6440994950439499
+unsw_to_2018,Autoencoder(t=percentile60),0.3468208092485549,0.21732324549960866,0.9996,0.3570255018215587

@@ -1,0 +1,13 @@
+Model,Param,Percentage_Predicted_Attack
+One_Class_SVM,0.001,100.0
+One_Class_SVM,0.005,100.0
+One_Class_SVM,0.01,100.0
+One_Class_SVM,0.02,100.0
+One_Class_SVM,0.05,100.0
+One_Class_SVM,0.1,100.0
+Local_Outlier_Factor,0.001,13.755999999999998
+Local_Outlier_Factor,0.005,13.876
+Local_Outlier_Factor,0.01,17.01
+Local_Outlier_Factor,0.02,100.0
+Local_Outlier_Factor,0.05,100.0
+Local_Outlier_Factor,0.1,100.0
