@@ -137,7 +137,7 @@ cross-dataset-thesis/
 
 **Cross dataset collapse depends on the direction and not universal**
 
-| Direction | Best in-domain F1 | Best cross-dataset F1 (supervised, without any improvement technique) |
+| Direction | Best in domain F1 | Best cross dataset F1 (supervised, without any improvement technique) |
 |---|---|---|
 | UNSW-NB15 > CICIDS2017 | 0.95 | 0.354 (considerable performance have retained) |
 | UNSW-NB15 > CSE-CIC-IDS2018 | 1.00 | 0.185 (considerable performance have retained) |
@@ -147,3 +147,11 @@ cross-dataset-thesis/
 - When the dataset UNSW-NB15 is used in training, this total failure have not happened, though the dataset UNSW-NB15 has different toolchain from the cicids datasets.
 - No similarity in the structure of the datasets doesn't mean its generalization is poor
 
+## Results by category
+### Unsupervised models, there is no single model that showed best in all directions
+
+| Direction | Best unsupervised model | F1 |
+|---|---|---|
+| CICIDS2017 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.274 |
+| UNSW-NB15 > CICIDS2017 | Autoencoder | **0.780 (best result)** |
+| UNSW-NB15 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.030 |
