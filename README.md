@@ -19,7 +19,7 @@ trained on a dataset is deployed to detect intrusions in a different network tra
 
 ```
 cross-dataset-thesis/
-├── data/                   # Links are mentioned above                   
+├── data/                   # Links are mentioned below in datasets explanation                   
 │   ├── CICIDS2017/
 │   ├── CSE-CIC-IDS2018/
 │   └── UNSW_NB15/
