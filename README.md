@@ -20,6 +20,8 @@ trained on a dataset is deployed to detect intrusions in a different network tra
 These datasets are not included in the Github repository due to the size of the datasets,
 All of these datasets are available at the given urls
 
+Download these datasets and place them in /data folder
+
 **UNSW-NB15**: https://research.unsw.edu.au/projects/unsw-nb15-dataset
 This is an older dataset of all that is built from the statistics of connection level and not on flow based features and used only as a training dataset. 
 
