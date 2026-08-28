@@ -155,3 +155,11 @@ cross-dataset-thesis/
 | UNSW-NB15 > CICIDS2017 | Autoencoder | **0.780 (best result)** |
 | UNSW-NB15 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.030 |
 | CICIDS2017 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.274 |
+
+**The diagnosis of OneClassSVM vs LocalOutlierFactor(Experiment 10)**
+
+Both the models one class svm & local outlier factor has showed that they are predicting attack for most of all the samples used when the dataset UNSW-NB15 used as the training dataset
+Finding is as below
+- **One Class SVM:** This cannot be fixed structurally, no type of parameter setting has closed the gap within the decision scores of source & target
+- **Local Outlier Factor:** This can be fixed, by lowering the value of contamination from 0.10 to 0.01 which restored the genuine behavior of classification
+
