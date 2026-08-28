@@ -152,6 +152,6 @@ cross-dataset-thesis/
 
 | Direction | Best unsupervised model | F1 |
 |---|---|---|
-| CICIDS2017 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.274 |
 | UNSW-NB15 > CICIDS2017 | Autoencoder | **0.780 (best result)** |
 | UNSW-NB15 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.030 |
+| CICIDS2017 > CSE-CIC-IDS2018 | Local Outlier Factor | 0.274 |
