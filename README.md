@@ -15,38 +15,6 @@ almost perfect accuracy when trained & tested on the same dataset.
 This dissertation performs an investigation and evaluation on what happens when a model 
 trained on a dataset is deployed to detect intrusions in a different network traffic dataset.
 
-## Datasets 
-
-These datasets are not included in the Github repository due to the size of the datasets,
-All of these datasets are available at the given urls
-
-Download these datasets and place them in /data folder
-
-**UNSW-NB15**: https://research.unsw.edu.au/projects/unsw-nb15-dataset
-This is an older dataset of all that is built from the statistics of connection level and not on flow based features and used only as a training dataset. 
-
-**CICIDS2017**: https://www.unb.ca/cic/datasets/ids-2017.html
-This dataset is formed from the real network traffic which is captured in a period of five days which includes Dos, brute force & web attacks.
-
-**CSE-CIC-IDS2018**: https://www.unb.ca/cic/datasets/ids-2018.html
-This dataset is a new and large version of the dataset CICIDS2017 that captured the common attack types which has an updated toolchain.
-
-
-All the models in this project are only trained on old dataset and tested on new dataset, 
-which has led to three directions of training and testing as below:
-
-1. UNSW-NB15 > CICIDS2017
-3. UNSW-NB15 > CSE-CIC-IDS2018
-2. CICIDS2017 > CSE-CIC-IDS2018
-
-## Models Evaluated
-
-Supervised models: Random Forest, Gradient Boosting, Logistic Regression, Neural Network
-Unsupervised models: Isolation Forest, One-Class SVM, Local Outlier Factor, Autoencoder
-
-All of these models have used in in-domain baselines, three cross-dataset directions, ten supplementary experiments, 
-& eleven techniques used to improve the performance.
-
 ## Structure of Repository
 
 ```
@@ -132,6 +100,38 @@ cross-dataset-thesis/
     │       ├── supervised/
     │       └── unsupervised/
 ```
+
+## Datasets 
+
+These datasets are not included in the Github repository due to the size of the datasets,
+All of these datasets are available at the given urls
+
+Download these datasets and place them in /data folder
+
+**UNSW-NB15**: https://research.unsw.edu.au/projects/unsw-nb15-dataset
+This is an older dataset of all that is built from the statistics of connection level and not on flow based features and used only as a training dataset. 
+
+**CICIDS2017**: https://www.unb.ca/cic/datasets/ids-2017.html
+This dataset is formed from the real network traffic which is captured in a period of five days which includes Dos, brute force & web attacks.
+
+**CSE-CIC-IDS2018**: https://www.unb.ca/cic/datasets/ids-2018.html
+This dataset is a new and large version of the dataset CICIDS2017 that captured the common attack types which has an updated toolchain.
+
+
+All the models in this project are only trained on old dataset and tested on new dataset, 
+which has led to three directions of training and testing as below:
+
+1. UNSW-NB15 > CICIDS2017
+3. UNSW-NB15 > CSE-CIC-IDS2018
+2. CICIDS2017 > CSE-CIC-IDS2018
+
+## Models Evaluated
+
+Supervised models: Random Forest, Gradient Boosting, Logistic Regression, Neural Network
+Unsupervised models: Isolation Forest, One-Class SVM, Local Outlier Factor, Autoencoder
+
+All of these models have used in in-domain baselines, three cross-dataset directions, ten supplementary experiments, 
+& eleven techniques used to improve the performance.
 
 ## Headline Finding
 
