@@ -180,3 +180,82 @@ Finding is as below
 | Ensemble score combination | Unsupervised | Solid performance, consistent where two of three directions have won |
 | Stacked meta classifier | Unsupervised | simpler ensemble has underperformed, which is likely to overfit small samples of calibration |
 | Auto selected pipeline | Unsupervised | By default Best general purpose, it never underperforms its own best candidate |
+
+
+## Setup
+
+### System requirements
+- Python 3.9 or higher
+- macOS, Linux, or Windows
+- 8 GB RAM minimum recommended
+- 5 GB free disk space for the raw datasets
+
+### Installation
+
+```bash
+git clone https://github.com/devivarshithapagadala-lab/cross-dataset-thesis.git
+cd cross-dataset-thesis
+
+python3 -m venv venv
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
+
+pip3 install -r requirements.txt
+```
+
+Incase, you hit an issue of package resolution on macOS, fix it by running:
+```bash
+pip3 install -r requirements.txt --break-system-packages
+```
+
+### `requirements.txt`
+```
+pandas>=1.5.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+torch>=2.0.0
+scipy>=1.9.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+```
+
+### Verify the setup
+
+```bash
+python3 -m src.preprocessing.test_preprocessing_cic2017
+```
+
+## Run the Pipeline as below
+
+**EDA**
+```bash
+python3 -m src.eda.inspect_datasets
+```
+Run all the other files in `src/eda/` the same format.
+
+**Analysis (in domain baselines & cross dataset evaluation)**
+```bash
+python3 -m src.studies.analysis.in_domain_baseline_supervised_2017
+python3 -m src.studies.analysis.cross_dataset_supervised_2017_source
+```
+Run all the other files in `src/studies/analysis/` the same format.
+
+**Supplementary experiments**
+```bash
+python3 -m src.studies.experiments.exp1_saturation_leakage
+```
+Run all the other experiments in this this folder from exp2 through exp10 the same format.
+
+**Improvement techniques — supervised**
+```bash
+python3 -m src.studies.improvements.supervised.improvement_few_shot_finetuning_all_directions
+```
+Run all tge the remaining four files in this folder the same format.
+
+**Improvement techniques — unsupervised**
+```bash
+python3 -m src.studies.improvements.unsupervised.improvement_unsupervised_auto_selected_pipeline
+```
+Run all tge the remaining five files in this folder the same format.
+
+All results are saved to `results/`, when you run all the files in this project.
