@@ -233,7 +233,14 @@ python3 -m src.eda.inspect_datasets
 ```
 Run all the other files in `src/eda/` the same format.
 
-**Analysis (in domain baselines & cross dataset evaluation)**
+**preprocessing**
+```bash
+python3 -m src.preprocessing.test_preprocessing_cic2017
+```
+Run all test_preprocessing files in `src/preprocessing/` the same format.
+Rest of the files here need not to be executed, as they used as reference in all the other analysis, experiments & improvements.
+
+**ANALYSIS (in domain baselines & cross dataset evaluation)**
 ```bash
 python3 -m src.studies.analysis.in_domain_baseline_supervised_2017
 python3 -m src.studies.analysis.cross_dataset_supervised_2017_source
