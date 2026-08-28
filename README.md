@@ -208,7 +208,7 @@ Incase, you hit an issue of package resolution on macOS, fix it by running:
 pip3 install -r requirements.txt --break-system-packages
 ```
 
-### `requirements.txt`
+### requirements.txt
 ```
 pandas>=1.5.0
 numpy>=1.23.0
