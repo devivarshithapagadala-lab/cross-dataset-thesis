@@ -148,7 +148,7 @@ cross-dataset-thesis/
 - No similarity in the structure of the datasets doesn't mean its generalization is poor
 
 ## Results by category
-### Unsupervised models, there is no single model that showed best in all directions
+**Unsupervised models, there is no single model that showed best in all directions**
 
 | Direction | Best unsupervised model | F1 |
 |---|---|---|
