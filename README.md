@@ -39,4 +39,13 @@ All of these models have used in in-domain baselines, three cross-dataset direct
 
 ## Headline Finding
 
+**Cross-dataset collapse is direction-specific, not universal.**
+
+| Direction | Best in-domain F1 | Best cross-dataset F1 (supervised, no improvement applied) |
+|---|---|---|
+| UNSW-NB15 > CICIDS2017 | 0.95 | 0.354 (considerable performance have retained) |
+| UNSW-NB15 > CSE-CIC-IDS2018 | 1.00 | 0.185 (considerable performance have retained) |
+| CICIDS2017 > CSE-CIC-IDS2018 | 0.95 | 0.001 (almost total collapse) |
+
+
 
