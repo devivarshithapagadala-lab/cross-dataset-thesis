@@ -31,7 +31,7 @@ which has led to three directions of training and testing as below:
 3. UNSW-NB15 > CSE-CIC-IDS2018
 2. CICIDS2017 > CSE-CIC-IDS2018
 
-## Models evaluated are
+## Models Evaluated
 
 Supervised models: Random Forest, Gradient Boosting, Logistic Regression, Neural Network
 Unsupervised models: Isolation Forest, One-Class SVM, Local Outlier Factor, Autoencoder
