@@ -39,6 +39,7 @@ All of these models have used in in-domain baselines, three cross-dataset direct
 
 ## Structure of Repository
 
+```
 cross-dataset-thesis/
 ├── data/                   # Links are mentioned above                   
 │   ├── CICIDS2017/
@@ -120,6 +121,7 @@ cross-dataset-thesis/
     │   └── improvements/
     │       ├── supervised/
     │       └── unsupervised/
+```
 
 ## Headline Finding
 
