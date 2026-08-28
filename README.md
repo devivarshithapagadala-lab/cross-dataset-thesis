@@ -24,10 +24,11 @@ All of these datasets are available at the given urls
 This is an older dataset of all that is built from the statistics of connection level and not on flow based features and used only as a training dataset. 
 
 **CICIDS2017**: https://www.unb.ca/cic/datasets/ids-2017.html
-real network traffic captured over 5 days, includes DoS, brute force, and web attacks.
+This dataset is formed from the real network traffic which is captured in a period of five days which includes Dos, brute force & web attacks.
 
 **CSE-CIC-IDS2018**: https://www.unb.ca/cic/datasets/ids-2018.html
-a newer, larger version of CICIDS2017, capturing similar attack types with an updated toolchain.
+This dataset is a new and large version of the dataset CICIDS2017 that captured the common attack types which has an updated toolchain.
+
 
 All the models in this project are only trained on old dataset and tested on new dataset, 
 which has led to three directions of training and testing as below:
