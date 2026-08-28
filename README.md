@@ -163,3 +163,18 @@ Finding is as below
 - **One Class SVM:** This cannot be fixed structurally, no type of parameter setting has closed the gap within the decision scores of source & target
 - **Local Outlier Factor:** This can be fixed, by lowering the value of contamination from 0.10 to 0.01 which restored the genuine behavior of classification
 
+### Improvement techniques — few-shot fine-tuning is the clear winner
+
+| Technique | Type | Result |
+|---|---|---|
+| CORAL domain adaptation (full alignment) | Supervised | Medium, helps combination of some model/direction, not helped others |
+| CORAL with tuned blending strength | Supervised | Medium, best blend of strength differs by model & direction |
+| Feature selection guided by domain divergence | Supervised | Medium, this helped logistic regression consistently, not so much for tree based models |
+| Few shot fine tuning | Supervised | Best technique implemented overall, F1 score upto 0.997 with 10 percent target labels |
+| Fine grained label budget sweep | Supervised | Confirms 125 samples which is 0.5 percent, already retained most of the benefit |
+| Target domain rescaling | Unsupervised | Negative, it doesn't help much, didn't help Local outlier factor substantially in two directions |
+| Combined domain training | Unsupervised | Medium, Local outlier factor has won clearly in 1 direction, weak for the rest |
+| Few shot hyperparameter/threshold calibration | Unsupervised | Good, Isolation Forest have improved everywhere, Autoencoder result is best overall |
+| Ensemble score combination | Unsupervised | Solid performance, consistent where two of three directions have won |
+| Stacked meta classifier | Unsupervised | simpler ensemble has underperformed, which is likely to overfit small samples of calibration |
+| Auto selected pipeline | Unsupervised | By default Best general purpose, it never underperforms its own best candidate |
