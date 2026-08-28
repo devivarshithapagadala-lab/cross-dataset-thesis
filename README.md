@@ -29,7 +29,7 @@ which has led to three directions of training and testing as below:
 3. UNSW-NB15 > CSE-CIC-IDS2018
 2. CICIDS2017 > CSE-CIC-IDS2018
 
-## models evaluated are
+## Models evaluated are
 
 Supervised models: Random Forest, Gradient Boosting, Logistic Regression, Neural Network
 Unsupervised models: Isolation Forest, One-Class SVM, Local Outlier Factor, Autoencoder
@@ -39,13 +39,15 @@ All of these models have used in in-domain baselines, three cross-dataset direct
 
 ## Headline Finding
 
-**Cross-dataset collapse is direction-specific, not universal.**
+**Cross dataset collapse depends on the direction and not universal**
 
-| Direction | Best in-domain F1 | Best cross-dataset F1 (supervised, no improvement applied) |
+| Direction | Best in-domain F1 | Best cross-dataset F1 (supervised, without any improvement technique) |
 |---|---|---|
 | UNSW-NB15 > CICIDS2017 | 0.95 | 0.354 (considerable performance have retained) |
 | UNSW-NB15 > CSE-CIC-IDS2018 | 1.00 | 0.185 (considerable performance have retained) |
 | CICIDS2017 > CSE-CIC-IDS2018 | 0.95 | 0.001 (almost total collapse) |
 
-
+- Supervised models showed total failure when the dataset CICIDS2017 is used to train and dataset CSE-CIC-IDS2018 used to test
+- When the dataset UNSW-NB15 is used in training, this total failure have not happened, though the dataset UNSW-NB15 has different toolchain from the cicids datasets.
+- No similarity in the structure of the datasets doesn't mean its generalization is poor
 
