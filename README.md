@@ -99,21 +99,21 @@ cross-dataset-thesis/
 │       │
 │       └── improvements/                                              
 │           ├── supervised/                                           
-│           │   ├── improvement_coral_alpha_sweep.py
-│           │   ├── improvement_coral_full_alignment.py
-│           │   ├── improvement_divergence_feature_selection.py
-│           │   ├── improvement_few_shot_finetuning_all_directions.py
+│           │   ├── improvement_coral_alpha_sweep.py  # tests the strength of alignment for partial vs full
+│           │   ├── improvement_coral_full_alignment.py  # Only Maximum strength of CORAL
+│           │   ├── improvement_divergence_feature_selection.py  # Gets rid of the most unmatched features
+│           │   ├── improvement_few_shot_finetuning_all_directions.py  # combines in a few real labeled examples
 │           │   └── improvement_fine_grained_label_budget_study.py    # how some labels are genuinely needed
 │           │
 │           └── unsupervised/                                          
-│               ├── improvement_target_rescaling_unsupervised.py
+│               ├── improvement_target_rescaling_unsupervised.py  # rescalinng done by using the own statistics of target
 │               ├── improvement_unsupervised_auto_selected_pipeline.py  # this picks the best configuration by default
-│               ├── improvement_unsupervised_combined_training.py
-│               ├── improvement_unsupervised_ensemble.py
-│               ├── improvement_unsupervised_fewshot_calibration.py
-│               └── improvement_unsupervised_stacked_meta.py
+│               ├── improvement_unsupervised_combined_training.py  # this adds some traffic of benign target while training
+│               ├── improvement_unsupervised_ensemble.py   # combines scores of 4 models using static weights you pick & tests various combos
+│               ├── improvement_unsupervised_fewshot_calibration.py  # tunes the settings using a small sample of labels
+│               └── improvement_unsupervised_stacked_meta.py   # combines scores of 4 models using weights it learns from labeled samples
 │
-└── results/                                    # When you run the files above, outputs/results/plots are saved here by default
+└── results/        # When you run the files above, outputs/results/plots are saved here by default
     ├── eda/
     ├── studies/
     │   ├── analysis/
