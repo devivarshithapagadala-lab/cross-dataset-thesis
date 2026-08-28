@@ -233,7 +233,7 @@ python3 -m src.eda.inspect_datasets
 ```
 Run all the other files in `src/eda/` the same format.
 
-**preprocessing**
+**PREPROCESSING**
 ```bash
 python3 -m src.preprocessing.test_preprocessing_cic2017
 ```
@@ -247,22 +247,31 @@ python3 -m src.studies.analysis.cross_dataset_supervised_2017_source
 ```
 Run all the other files in `src/studies/analysis/` the same format.
 
-**Supplementary experiments**
+**EXPERIMENTS**
 ```bash
 python3 -m src.studies.experiments.exp1_saturation_leakage
 ```
 Run all the other experiments in this this folder from exp2 through exp10 the same format.
 
-**Improvement techniques — supervised**
+**IMPROVEMENT TECHNIQUES — supervised**
 ```bash
 python3 -m src.studies.improvements.supervised.improvement_few_shot_finetuning_all_directions
 ```
 Run all tge the remaining four files in this folder the same format.
 
-**Improvement techniques — unsupervised**
+**IMPROVEMENT TECHNIQUES — unsupervised**
 ```bash
 python3 -m src.studies.improvements.unsupervised.improvement_unsupervised_auto_selected_pipeline
 ```
 Run all tge the remaining five files in this folder the same format.
 
 All results are saved to `results/`, when you run all the files in this project.
+
+## Reproducibility
+
+All the models belong to scikit learn uses `random_state=42`.
+The PYTorch Autoencoder seeds python's random, numpy & PyTorch in addition including CUDA in its constructor explicitly, as numpy's seed solely does'nt manage internal weight of PyTorch initialization (refer src/models/autoencoder.py).
+
+## License
+
+The submission of this project is part of academic research & shared here for the purpose of reference & reproducibility.
