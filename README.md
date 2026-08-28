@@ -163,7 +163,9 @@ Finding is as below
 - **One Class SVM:** This cannot be fixed structurally, no type of parameter setting has closed the gap within the decision scores of source & target
 - **Local Outlier Factor:** This can be fixed, by lowering the value of contamination from 0.10 to 0.01 which restored the genuine behavior of classification
 
-## Improvement techniques — few shot fine tuning is the clear best technique
+## Improvement techniques  
+
+**Few shot fine tuning is the clear best technique**
 
 | Technique | Type | Result |
 |---|---|---|
