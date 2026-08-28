@@ -1,4 +1,4 @@
-# Direction-Dependent Generalization in Cross-Dataset Network Intrusion Detection: **A Comparative Study of In-Domain and Cross-Dataset Performance for Supervised and Unsupervised Machine Learning Models**
+# Direction Dependent Generalization in Cross Dataset Network Intrusion Detection: **A Comparative Study of In-Domain and Cross-Dataset Performance for Supervised and Unsupervised Machine Learning Models**
 
 **Author:** Devi Varshitha Pagadala
 **Course:** MSc Data Science, AI, Digital business
